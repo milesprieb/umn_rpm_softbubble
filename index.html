@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Tactile Perception for Robot Grasping and Manipulation</title>
+  <title>Toyota Robotics Institute (TRI)/Punyo Soft Bubble Gripper Replication/Extension</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,15 +52,13 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Tactile Perception for Robot Grasping and Manipulation</h1>
+            <h1 class="title is-1 publication-title">Toyota Robotics Institute (TRI)/Punyo Soft Bubble Gripper Replication/Extension</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
                     Miles Priebe <sup></sup>,</span>
                 <span class="author-block">
-                    Nirmal Raj <sup></sup>,</span>
-                  <span class="author-block">
-                    Adam Imdieke
+                    Aaron Fernandes <sup></sup>,</span>
                   </span>
                   </div>
 
@@ -73,14 +71,14 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://drive.google.com/file/d/126tixv4Su9zlAi3OiLCLUWouMxbb7peM/view" target="_blank"
+                        <a href="https://drive.google.com/file/d/1Seu32wjhN04TSUN-DWmPGM66a7c1O_Qb/view?usp=sharing" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
-                        <span>Video Proposal</span>
+                        <span>Capstone Proposal</span>
                       </a>
-
+<!-- 
                       <span class="link-block">
                         <a href="https://drive.google.com/file/d/1BhVNvDP_2yf9x-0KZsKHfQrrxE01lX0r/view?usp=share_link" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
@@ -89,7 +87,7 @@
                         </span>
                         <span>Video Student Lecture</span>
                       </a>
-                    </span>
+                    </span> -->
 
                     <!-- Supplementary PDF link -->
                     <!-- <span class="link-block">
@@ -104,7 +102,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://gitfront.io/r/user-6067410/mPmX47cu2bDZ/gelsight/" target="_blank"
+                    <a href="https://gitfront.io/r/user-4900307/8nAfiYaiLXFk/soft-bubble/" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -139,10 +137,16 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-            We explore tactile perception for robotic manipulation in simulation (Tacto) and real life (UR5e).
-            We leverage the high spatial resolution of the GelSight sensor by capturing tactile images of chess 
-            pieces for a classification and board placement task.
+          <p> 
+            For robots, visuo-tactile perception remains a key methodology to obtain environmental and object information. 
+            Tactile sensors can directly measure some physical properties of objects and environment, a capability that vision sensors struggle to achieve. 
+            Humans also utilize touch sensory receptors as an important means to perceive and interact with the environment. 
+            This interaction becomes increasingly more complex when we attempt tasks in cluttered environments. 
+            Cluttered environments like homes require stable grasps, precise placement, and robustness against external contact. 
+            In this project, we present the fabrication process and software development of a soft visuo-tactile gripper system called Soft Bubble.
+            We present algorithmic-based methods for estimating in-hand pose and shear-deformation of transparent objects. 
+            We also build upon these methods by presenting methods for learning a policy to both grasp and manipulate using tactile information fro the Soft Bubble.
+            Evaluating the effectiveness with which the Soft Bubble can meet the demands of tasks in a home environment can expand the perception and manipulation capabilities of robots.
           </p>
         </div>
       </div>
@@ -194,7 +198,7 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -203,7 +207,7 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 <!-- Image carousel -->
@@ -213,16 +217,37 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item has-text-centered">
         <!-- Your image here -->
-        <img src="static/images/gel_real_collage.png" alt="MY ALT TEXT"/>
+        <img src="static/images/bubble_redesign.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Tactile images from Gelsight sensors.
+          Re-designed 3D fabricated grippers.
         </h2>
       </div>
       <div class="item has-text-centered"> -->
         <!-- Your image here -->
-        <img src="static/images/gel_sim_collage.png" alt="MY ALT TEXT"/>
+        <img src="static/images/parts.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Tactile images from Tacto simulation.
+          Dissassembled view of 3D fabricated parts.
+        </h2>
+      </div>
+      <div class="item has-text-centered">
+        <!-- Your image here -->
+        <img src="static/images/on_robot.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Assembled on-robot view of redesigned Soft Bubble grippers.
+        </h2>
+      </div>
+      <div class="item has-text-centered">
+        <!-- Your image here -->
+        <img src="static/images/task.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Task diagram for Iterative Closest Point (ICP) pose-estimation and shear-deformation experiments.
+        </h2>
+      </div>
+      <div class="item has-text-centered">
+        <!-- Your image here -->
+        <img src="static/images/icp.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          ICP pose-estimation results comparison with depth-estimation network results from Ambrus, Rares et al. “Monocular Depth Estimation for Soft Visuotactile Sensors.” 2021 IEEE 4th International Conference on Soft Robotics (RoboSoft) (2021): 643-649.
         </h2>
       </div>
     </div>
@@ -236,19 +261,26 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Simulation visualization and task demo</h2>
+      <h2 class="title is-3">Iterative Closest Point (ICP) In-hand Pose Estimation and Shear-Deformation Hand-Over Demo</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/tacto_web-2023-05-08_13.02.55.mp4"
+            <source src="static/videos/icp_demo.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/deep_rob_final_demo_web.mp4"
+            <source src="static/videos/handover.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/softbubble3.mp4"
             type="video/mp4">
           </video>
         </div>
@@ -264,28 +296,24 @@
     <div class="container is-max-desktop content">
       <h2 class="title">References</h2>
       <pre><code>
-        @misc{bauza2022tac2pose,
-        title={Tac2Pose: Tactile Object Pose Estimation from the First Touch}, 
-        author={Maria Bauza and Antonia Bronars and Alberto Rodriguez},
-        year={2022},
-        eprint={2204.11701},
-        archivePrefix={arXiv},
-        primaryClass={cs.CV}
-        }
+        @misc{ambrus2021monocular,
+          title={Monocular Depth Estimation for Soft Visuotactile Sensors}, 
+          author={Rares Ambrus and Vitor Guizilini and Naveen Kuppuswamy and Andrew Beaulieu and Adrien Gaidon and Alex Alspach},
+          year={2021},
+          eprint={2101.01677},
+          archivePrefix={arXiv},
+          primaryClass={cs.RO}
+    }
 
-        @article{Wang_2022,
-          doi = {10.1109/lra.2022.3146945},         
-          url = {https://doi.org/10.1109%2Flra.2022.3146945},
-          year = 2022,
-          month = {apr},         
-          publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},          
-          volume = {7},          
-          number = {2},          
-          pages = {3930--3937},         
-          author = {Shaoxiong Wang and Mike Lambeta and Po-Wei Chou and Roberto Calandra},         
-          title = {{TACTO}: A Fast, Flexible, and Open-Source Simulator for High-Resolution Vision-Based Tactile Sensors},          
-          journal = {{IEEE} Robotics and Automation Letters}
-        }
+    @article{key2,
+      author={Kuppuswamy, Naveen and Alspach, Alex and Uttamchandani, Avinash and Creasey, Sam and Ikeda, Takuya and Tedrake, Russ},
+      booktitle={2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+      title={Soft-bubble grippers for robust and perceptive manipulation}, 
+      year={2020},
+      volume={},
+      number={},
+      pages={9917-9924},
+      doi={10.1109/IROS45743.2020.9341534}}
   </code></pre>
     </div>
 </section>
