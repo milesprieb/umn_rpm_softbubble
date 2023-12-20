@@ -24,7 +24,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Toyota Research Institute (TRI)/Punyo Soft Bubble Gripper Replication/Extension</title>
+  <title>Applications of the Soft Bubble Grippers:
+    Visuotactile Sensing for Visuomotor Policy
+    Learning</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,7 +54,9 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Toyota Research Institute (TRI)/Punyo Soft Bubble Gripper Replication/Extension</h1>
+            <h1 class="title is-1 publication-title">Applications of the Soft Bubble Grippers:
+              Visuotactile Sensing for Visuomotor Policy
+              Learning</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -69,23 +73,23 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://drive.google.com/file/d/1Seu32wjhN04TSUN-DWmPGM66a7c1O_Qb/view?usp=sharing" target="_blank"
+                        <a href="https://drive.google.com/file/d/1ylTNeQD0-cBCastY2q4DzmBsnbgDafnd/view?usp=sharing" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
-                        <span>Capstone Proposal</span>
+                        <span>Capstone Report</span>
                       </a>
-<!-- 
+
                       <span class="link-block">
-                        <a href="https://drive.google.com/file/d/1BhVNvDP_2yf9x-0KZsKHfQrrxE01lX0r/view?usp=share_link" target="_blank"
+                        <a href="https://drive.google.com/file/d/1jTSPiOyw4rvHDGdjpqxZW0FiXw0xojJI/view?usp=sharing" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
-                        <span>Video Student Lecture</span>
+                        <span>Video</span>
                       </a>
-                    </span> -->
+                    </span> 
 
                     <!-- Supplementary PDF link -->
                     <!-- <span class="link-block">
@@ -105,7 +109,7 @@
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Code (coming soon)</span>
                   </a>
                 </span>
 
@@ -136,15 +140,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p> 
-            For robots, visuo-tactile perception remains a key methodology to obtain environmental and object information. 
-            Tactile sensors can directly measure some physical properties of objects and environment, a capability that vision sensors struggle to achieve. 
-            Humans also utilize touch sensory receptors as an important means to perceive and interact with the environment. 
-            This interaction becomes increasingly more complex when we attempt tasks in cluttered environments. 
-            Cluttered environments like homes require stable grasps, precise placement, and robustness against external contact. 
-            In this project, we present the fabrication process and software development of a soft visuo-tactile gripper system called Soft Bubble.
-            We present algorithmic-based methods for estimating in-hand pose and shear-deformation of transparent objects. 
-            Future work will build upon these methods by presenting methods for learning a policy to both grasp and manipulate using tactile information fro the Soft Bubble.
-            Evaluating the effectiveness with which the Soft Bubble can meet the demands of tasks in a home environment can expand the perception and manipulation capabilities of robots.
+            Contact-rich tasks are challenging for robots to learn, due to the inherently restrictive and rigid constraints imposed by motion planning and hardware. In many tasks, the robot is discouraged from interacting with its environment through touch, either by simply proposing an infeasible trajectory, or by protective stopping upon light contact. As we know from human interactions at a young age, tactile feedback is very important for learning robust and precise manipulation skills. In this work, we examine how tactile feedback can provide auxiliary information for visuomotor policy learning. We do this by replicating and re-designing the Soft Bubble gripper developed by Punyo, a research group at Toyota Research Institute (TRI). The Soft Bubble gripper uses optical sensing to obtain tactile information, also known as a visuotactile sensor. We designed a novel task that is representative of an action that humans commonly rely on tactile feedback to perform. We generate teleoperation demonstration data for training both transformer and diffusion-based policy learning models. From the experimental results, we analyze how task design, hardware design, and architecture/training choices are all contributing factors to performance. We address improvements to be made to original works to leverage visuotactile sensing and what future directions are viable for generalized tactile sensing in robotics.
           </p>
         </div>
       </div>
@@ -193,96 +189,92 @@
 
 
 <!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
+<section class="hero is-small is-light has-text-centered">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title">Poster</h2>
-      <iframe  src="static/pdfs/highres_deeprob-poster-template.pdf" width="100%" height="550">
+      <h2 class="title">MnRI Showcase Poster 2023</h2>
+      <iframe  src="static/pdfs/MnRI_showcase_poster.pdf" width="600" height="800">
           </iframe>
         
       </div>
     </div>
-  </section> -->
+  </section>
 <!--End paper poster -->
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item has-text-centered">
-        <!-- Your image here -->
-        <img src="static/images/bubble_redesign.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Re-designed 3D fabricated grippers.
-        </h2>
-      </div>
-      <div class="item has-text-centered"> -->
-        <!-- Your image here -->
-        <img src="static/images/parts.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Dissassembled view of 3D fabricated parts.
-        </h2>
-      </div>
-      <div class="item has-text-centered">
-        <!-- Your image here -->
-        <img src="static/images/on_robot.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Assembled on-robot view of redesigned Soft Bubble grippers.
-        </h2>
-      </div>
-      <div class="item has-text-centered">
-        <!-- Your image here -->
-        <img src="static/images/task.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Task diagram for Iterative Closest Point (ICP) pose-estimation and shear-deformation experiments.
-        </h2>
-      </div>
-      <div class="item has-text-centered">
-        <!-- Your image here -->
-        <img src="static/images/icp.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          ICP pose-estimation results comparison with depth-estimation network results from Ambrus, Rares et al. “Monocular Depth Estimation for Soft Visuotactile Sensors.” 2021 IEEE 4th International Conference on Soft Robotics (RoboSoft) (2021): 643-649.
-        </h2>
-      </div>
-    </div>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<div class="clearfix">
+  <div class="img-container">
+    <!-- Your image here -->
+    <img src="static/images/bubble_redesign.png" alt="MY ALT TEXT" />
+    <h2 class="subtitle has-text-centered">
+      Re-designed 3D fabricated grippers.
+    </h2>
   </div>
+
+  <div class="img-container"> 
+    <!-- Your image here -->
+    <img src="static/images/parts.jpg" alt="MY ALT TEXT"  width="400" height="500"/>
+    <h2 class="subtitle has-text-centered">
+      Dissassembled view of 3D fabricated parts.
+    </h2>
+  </div>
+
+  <div class="img-container">
+    <!-- Your image here -->
+    <img src="static/images/on_robot.jpg" alt="MY ALT TEXT" width="400" height="500"/>
+    <h2 class="subtitle has-text-centered">
+      Assembled on-robot view of redesigned Soft Bubble grippers.
+    </h2>
+  </div>
+</div>
+
+
+
 </div>
 </div>
 </section>
 <!-- End image carousel -->
 
+
+<h2 class="title is-3 has-text-centered">Successful policy evaluations of the Rotate Bottle task</h2>
+  <div class="item item-video1 has-text-centered">
+    <video poster="" id="video1" autoplay controls muted loop width="600" height="600">
+      <!-- Your video file here -->
+      <source src="static/videos/eval1_2.mp4"
+      type="video/mp4">
+    </video>
+
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Iterative Closest Point (ICP) In-hand Pose Estimation and Shear-Deformation Hand-Over Demos</h2>
+      <h2 class="title is-3">Successful policy evaluation of the Rotate Bottle task</h2>
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/icp_demo.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/handover.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/softbubble3.mp4"
-            type="video/mp4">
-          </video>
+       
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
@@ -291,14 +283,6 @@
     <div class="container is-max-desktop content">
       <h2 class="title">References</h2>
       <pre><code>
-    @misc{ambrus2021monocular,
-      title={Monocular Depth Estimation for Soft Visuotactile Sensors}, 
-      author={Rares Ambrus and Vitor Guizilini and Naveen Kuppuswamy and Andrew Beaulieu and Adrien Gaidon and Alex Alspach},
-      year={2021},
-      eprint={2101.01677},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO}}
-
     @article{key2,
       author={Kuppuswamy, Naveen and Alspach, Alex and Uttamchandani, Avinash and Creasey, Sam and Ikeda, Takuya and Tedrake, Russ},
       booktitle={2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
@@ -308,6 +292,13 @@
       number={},
       pages={9917-9924},
       doi={10.1109/IROS45743.2020.9341534}}
+
+      @inproceedings{chi2023diffusionpolicy,
+        title={Diffusion Policy: Visuomotor Policy Learning via Action Diffusion},
+        author={Chi, Cheng and Feng, Siyuan and Du, Yilun and Xu, Zhenjia and Cousineau, Eric and Burchfiel, Benjamin and Song, Shuran},
+        booktitle={Proceedings of Robotics: Science and Systems (RSS)},
+        year={2023}
+      }
   </code></pre>
     </div>
 </section>
